@@ -21,3 +21,28 @@ main {
 	width: 100%;
 	height: 100%;
 }
+
+.balloon {
+	width: 130px;
+	height: 100%;
+	position: absolute;
+	transform: rotate(0deg) translate(-50%, 0%);
+	transform-origin: center bottom;
+}
+
+.balloon > img {
+	position: absolute;
+	transform: translate(-50%, 0%);
+	top: 10%;
+	width: 130px;
+}
+
+.line {
+	position: absolute;
+	top: 20%;
+	left: 63px;
+	z-index: -1;
+	height: 100%;
+	width: 5px;
+	background-color: black;
+}
