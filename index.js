@@ -57,6 +57,12 @@ function createBalloon() {
 	balloonImg.src = `./imgs/balloon_${getRandomBalloon()}.png`;
 	balloonImg.alt = 'baloon';
 	balloonImg.style.top = randomHeight + '%';
+	balloonImg.addEventListener('mouseover', () => {
+		balloonImg.style.width = '105%';
+	});
+	balloonImg.addEventListener('mouseleave', () => {
+		balloonImg.style.width = '100%';
+	});
 
 	const line = document.createElement('div');
 	line.className = 'line';
