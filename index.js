@@ -1,7 +1,16 @@
-const balloon = document.querySelector('.balloon');
-const home = document.querySelector('.home');
+import images from './statics/images.json' assert { type: 'json' };
 
+const home = document.querySelector('.home');
 const locateRotate = [];
+
+function preload(images) {
+	images.forEach((image) => {
+		const img = new Image();
+		img.src = image;
+	});
+}
+
+preload(images);
 
 function deleteBalloon(e) {
 	const nodes = e.target.parentElement;
