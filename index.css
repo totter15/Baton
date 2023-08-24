@@ -23,7 +23,7 @@ main {
 }
 
 .balloon {
-	width: 130px;
+	width: 150px;
 	height: 90%;
 	position: absolute;
 	transform: rotate(0deg) translate(-50%, 0%);
@@ -34,13 +34,13 @@ main {
 	position: absolute;
 	transform: translate(-50%, 0%);
 	top: 10%;
-	width: 130px;
+	width: 100%;
 }
 
 .line {
 	position: absolute;
 	bottom: 0;
-	left: 63px;
+	left: 50%;
 	z-index: -1;
 	width: 5px;
 	height: 90%;
